@@ -1,0 +1,128 @@
+.next,
+.prev {
+	background-image: url(../images/master-sprite.png);
+	height: 43px;
+	width:42px;
+	display:block;
+	cursor: pointer;
+	background-color: #000;
+	@extend .hide-text;
+}
+.next {
+	background-position: -352px 0;
+}
+.prev {
+	background-position: -304px 0;
+}
+.hide-text {
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.main{
+	position: absolute;
+	width: 660px;
+	height: 350px;
+	left: 50%;
+	top: 50%;
+	margin-top: -175px;
+	margin-left: -330px;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.95);
+	z-index: 999;
+	@extend .hide-text;
+	h1 {
+		width: 306px;
+		margin: 10px auto;
+		height: 160px;
+		background-image: url(../images/ajka-creations-logo.png);
+		background-repeat: no-repeat;
+	}
+}
+.main-container {
+	position: relative;
+}
+button.cross {
+	position: absolute;
+	right: 1em;
+	top: 2%;
+	width:auto;
+	border:0 none;
+	margin:0;
+	padding:0;
+	background:transparent;
+	@extend .hide-text;
+	span {
+		height: 5px;
+        width: 49px;
+        margin: 0;
+        background: red;
+        display: #000;
+        &:after {
+            height: 5px;
+            width: 49px;
+            content: " ";
+            display: block;
+			-webkit-transform: rotate(90deg);
+			-moz-transform: rotate(90deg);   
+			transform: rotate(90deg);       
+	        background: #000;
+        }
+	}
+}
+.spin-plus {
+    display: block;
+    padding:40px 0;
+    &.animate span{
+       -webkit-transform: rotate(180deg);   
+    }
+    &.animate span:after{
+       -webkit-transform: rotate(180deg); 
+    }
+    span {
+        height: 5px;
+        width: 49px;
+        margin: 0;
+        background: red;
+        -webkit-transition: all 0.8s ease;
+        display: block;
+        &:after {
+            -webkit-transition: all 0.4s ease;
+            height: 5px;
+            width: 49px;
+            content: " ";
+            display: block;
+         -webkit-transform: rotate(90deg);       
+        background: red;
+        }
+    }
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+	/* Retina-specific stuff here */
+	.next,
+	.prev{
+		background-size: 231px 76px;
+	}
+	.next {
+		background-position: -43px 0 ;
+	}
+	.prev {
+		background-position: 2px 0 ;
+	}
+	.main h1 {
+		background-image: url(../images/ajka-creations-logo_2x.png);
+		background-size: 306px 160px;
+	}
+
+}
+@import 'superslides';
