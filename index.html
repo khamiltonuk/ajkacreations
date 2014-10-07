@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="container">
+  <h1>AJKA Creations</h1>
+  <p class="lead">Luxury 100% hand knitted scarves and hats using only the finest yarns.
+Unique and exclusively designed for the individual with discerning tastes and wants to stand out in the crowd!!</p>
+<p>AJKA produces a wide range of products and has a reputation for high quality goods at very competitive prices.</p>
+</div>
   <div id="slides">
     <div class="slides-container">
       <img src="images/IMG_5655.jpg" width="" height="" alt="Surly">
@@ -28,15 +34,75 @@
     </div>
   </div>
 
+<div class="container">
+  <a href="http://www.ebay.co.uk/usr/ajkacreations?_trksid=p2047675.l2559">
+  <img src="images/EBay_logo.svg" alt="">
+  </a>
+</div>
+<section class="container">
+
+  <h2><abbr tittle="Frequently Asked Questions">FAQ</abbr></h2>
+  <h3>Where does the name AJKA come from?</h3>
+  <p>Upon the death of my beloved husband I selected such name to forever keep my family together in my heart. The name AJKA is compiled with the letters of the first names of our family, my late partner, myself and my two sons (Alex, Jessie, Keanu &amp; Antonio). During the worst days of my life it was the art of knitting and the support of my children, which kept me, distracted and ultimately helped me to deal with our tragic loss. Hence why today AJKA is not only a product or a brand but also a tribute to how even through suffering our loved ones can inspire us all to succeed.</p>
+
+  <h3>When did AJKA start?</h3>
+  <p>During my childhood our mother taught me the art of knitting, as it was the only source of income we depended on. Coming from a poor background our mother would sell her craft and creations in order to feed our large family, however that alone was not enough to support us. After our father left home we all had to take-up labouring jobs, thus our hobby had to be forgotten for more valuable tasks, little did I know that decades later it would shape what was to become AJKA…</p>
+  <p>A month after I lost my husband, knitting was the escape I needed from the endless torment I felt- it literally saved my life and it gave me a chance to create something beautiful.</p>
+
+  <h3>How do you make the items?</h3>
+  <p>Every item undergoes a thorough process to ensure that its quality remains consistent despite the uniqueness of each craft. Firstly we select the best fitting materials in order to complement the particular function, then we select the style which best appeals to the visual appearance of the finished item. Finally, we knit the entire composition by hand allowing us to express our selves through our intricate patterns, but also giving each scarf, pillow cover, decoration or hat a unique identity which cannot be replicated elsewhere.</p>
+
+  <h3>What make AJKA unique and diferent?</h3>
+  <p>Apart from taking every detail into consideration throughout the creation process, and selecting the right material for the right item, the single most defining feature about AJKA is the individuality </p>
+
+  <h3>Where can I purchase AJKA products</h3>
+  <p>We have an online store at <a href="http://www.ebay.co.uk/itm/AJKA-Creations-scarf-and-Hat-Collection/331301297697?_trksid=p2047675.c100011.m1850&_trkparms=aid%3D222007%26algo%3DSIC.MBE%26ao%3D1%26asc%3D20140107083358%26meid%3D3531684201fa45779fe43f62dc1f28a7%26pid%3D100011%26prg%3D20140107083358%26rk%3D10%26rkt%3D10%26sd%3D271307037796">ebay</a> where you can purcahce in a </p>
+
+</section>
+
+<section class="container">
+  <h2></h2>
+  <div id="instafeed"></div>
+</section>
+
+<section class="container">
+<blockquote>
+  "Excellent service. The quality is superb! Very pleased - thank you."
+</blockquote>
+  </section>
+
+<footer class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <a href="https://www.facebook.com/pages/AJKA-Creations/1604733229753799" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i>Facebook</a>
+    </div>
+    <div class="col-md-2">
+      <a href="https://twitter.com/ajkacreations"><i class="fa fa-twitter-square fa-2x"></i>Twitter</a>
+    </div>
+    <div class="col-md-2">
+      <a href="http://instagram.com/ajkacreations_"><i class="fa fa-instagram fa-2x"></i>Instagram</a>
+    </div>
+  </div>
+<footer>
+
+
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/instafeed.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
   <script>
     $(function() {
       $('#slides').superslides({
         hashchange: true
       });
+      var userFeed = new Instafeed({
+        get: 'user',
+        userId: 30926452,
+        accessToken: '30926452.467ede5.083a2ef187894f6b90c6542df8700158'
+    });
+    userFeed.run();
     });
   </script>
 </body>
