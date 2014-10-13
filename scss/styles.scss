@@ -83,6 +83,16 @@ footer {
 	overflow: hidden;
 	white-space: nowrap;
 }
+.recent-insta-posts {
+	height: 150px;
+	overflow: hidden;
+	a {
+		float: left;
+		// display:block;
+		// margin-right: 20px;
+		// margin-bottom: 20px;
+	}
+}
 .main{
 	position: absolute;
 	width: 660px;
@@ -95,13 +105,23 @@ footer {
 	background-color: rgba(255,255,255,0.95);
 	z-index: 999;
 	@extend .hide-text;
-	h1 {
-		width: 306px;
-		margin: 10px auto;
-		height: 160px;
-		background-image: url(../images/ajka-creations-logo.png);
-		background-repeat: no-repeat;
-	}
+	
+}
+.ebay-logo {
+	@extend .hide-text;
+	width:300px;
+	height:120px;
+	margin: 30px auto;
+	background-image: url(../images/EBay_logo.png);
+	background-image: url(../images/EBay_logo.svg), none;
+}
+.logo {
+	@extend .hide-text;
+	width: 306px;
+	margin: 30px auto;
+	height: 160px;
+	background-image: url(../images/ajka-creations-logo.png);
+	background-repeat: no-repeat;
 }
 .main-container {
 	position: relative;

@@ -5296,9 +5296,9 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'ambleregular';
   src: url("../fonts/Amble-Regular-webfont.eot?v=4.2.0");
-  src: url("../fonts/Amble-Regular-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/Amble-Regular-webfont.woff?v=4.2.0") format("woff"), url("../fonts/Amble-Regular-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/Amble-Regular-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("../fonts/Amble-Regular-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/Amble-Regular-webfont.woff?v=4.2.0") format("woff"), url("../fonts/Amble-Regular-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/Amble-Regular-webfont.svg?v=4.2.0#ambleregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -6855,10 +6855,16 @@ footer {
   background-position: -304px 0; }
 
 .hide-text, .next,
-.prev, .main, button.cross {
+.prev, .main, .ebay-logo, .logo, button.cross {
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap; }
+
+.recent-insta-posts {
+  height: 150px;
+  overflow: hidden; }
+  .recent-insta-posts a {
+    float: left; }
 
 .main {
   position: absolute;
@@ -6871,12 +6877,20 @@ footer {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 999; }
-  .main h1 {
-    width: 306px;
-    margin: 10px auto;
-    height: 160px;
-    background-image: url(../images/ajka-creations-logo.png);
-    background-repeat: no-repeat; }
+
+.ebay-logo {
+  width: 300px;
+  height: 120px;
+  margin: 30px auto;
+  background-image: url(../images/EBay_logo.png);
+  background-image: url(../images/EBay_logo.svg), none; }
+
+.logo {
+  width: 306px;
+  margin: 30px auto;
+  height: 160px;
+  background-image: url(../images/ajka-creations-logo.png);
+  background-repeat: no-repeat; }
 
 .main-container {
   position: relative; }
